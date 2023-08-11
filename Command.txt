@@ -1,0 +1,14 @@
+vs_BuildTools.exe ^
+--add Microsoft.VisualStudio.Workload.NativeDesktop ^
+--add Microsoft.VisualStudio.Component.VC.CMake.Project ^
+--add Microsoft.VisualStudio.Component.Windows10SDK.19041 ^
+--passive --norestart ^
+--includeRecommended ^
+--wait
+
+
+# Download vs_BuildTills.exe from here.
+# https://visualstudio.microsoft.com/visual-cpp-build-tools/
+# We can also use the Visual Studio 2022 Community installer with the same flags
+# instead of vs_BuildTools.exe. vs_BuildTools.exe is a smaller download because
+# it doesn't includ the Visual Studio IDE just the build tools wich is what we need.
